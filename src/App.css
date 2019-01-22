@@ -1,32 +1,168 @@
-.App {
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.container {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  padding: 1.5em;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.container a{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px;
+  margin: 0 10px;
+  opacity: .4
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.brackets a:before, .brackets a:after {
+  position: absolute;
+  opacity: 0;
+  font-size: 35px;
+  top: 0px;
+  transition: all .3s;
+}
+
+.brackets a:before {
+  content: '(';
+  left: -5px;
+  transform: translateX(10px);
+}
+
+.brackets a:after {
+  content: ')';
+  right: -5px;
+  transform: translateY(-10px);
+}
+
+.brackets a:hover:before, .brackets a:hover:after{
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.name {
+  font-family: Oswald;
   color: white;
+  margin: 0 auto;
+  padding: 5em;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.name h1 {
+  font-size: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name h3{
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.background{
+  height: 100vh;
+  background: url('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
+}
+
+.aboutme {
+  margin: 0 auto;
+  text-align: center;
+  width: 45vw;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10vh;
+}
+
+.aboutme h1{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+
+.resume {
+  background-color: #6094A8;
+  color: white;
+  border-radius: 48px;
+  padding: 10px 30px;
+  text-decoration: none;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  line-height: 48px;
+  box-shadow: 0 7px 16px 0 rgba(50, 50, 50, 0.2);
+}
+
+.projects {
+  margin:0 auto;
+  text-align: center;
+  margin-top: 10vh;
+  width: 75%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.projects h1 {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+
+.projectsList{
+  display: flex;
+  width:80%;
+  margin: 0 auto;
+}
+
+.projectsList div {
+margin: 0 auto;
+}
+
+.project-image{
+  height: 200px;
+  padding: 10px;
+}
+
+.github-link{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 48px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  line-height: 48px;
+  letter-spacing: .1em;
+}
+
+.contact{
+  margin:0 auto;
+  text-align: center;
+  margin-top: 10vh;
+  font-family: 'Montserrat', sans-serif;
+  width: 40%;
+}
+
+.contact h1 {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+
+.icon {
+  height: 64px;
+  padding: 40px;
+}
+
+.white-cover{
+  background-color: #ffffff;
+  height: 35em;
+}
+
+.contact-cover{
+  background-color: #ffffff;
+  height: 20em;
 }
