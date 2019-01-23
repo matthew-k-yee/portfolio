@@ -97,7 +97,7 @@
 }
 
 .projects {
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
   margin-top: 10vh;
   width: 75%;
@@ -122,7 +122,7 @@ margin: 0 auto;
 }
 
 .project-image{
-  height: 15vh;
+  height: 10em;
 }
 
 .github-link{
@@ -163,5 +163,44 @@ margin: 0 auto;
 
 .contact-cover{
   background-color: #ffffff;
-  height: 20em;
+  height: 400px;
+}
+
+@media screen and (max-width:1200px) {
+  .project-image{
+    height: 8em;
+  }
+}
+
+@media screen and (max-width:940px) {
+  .project-image{
+    height: 7em;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .project-image{
+    height: 6em;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .projectsList{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin: 0 auto;
+  }
+  .white-cover {
+    background-color: #ffffff;
+    height: 50em;
+  }
+
+  .github-link {
+    display: none;
+  }
+
+  .icon{
+    height: 5%;
+  }
 }
