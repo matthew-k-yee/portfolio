@@ -1,5 +1,4 @@
 import React from 'react'
-// import File from '/public/resources/matthew-k-yee.pdf'
 // import Pdf from "../files/resume.pdf"
 
 
